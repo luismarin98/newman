@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Escuela de Posgrado Newman - Maestrías para Profesionales",
   description:
     "Impulsa tu carrera profesional con nuestras maestrías diseñadas para profesionales latinoamericanos. Educación de calidad, flexible y orientada a resultados.",
-  generator: "v0.app",
+  authors: [{ name: "Luis Alberto Marin Munoz", url: "https://luis-marin.vercel.app" }],
 }
 
 export default function RootLayout({

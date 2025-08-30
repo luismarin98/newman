@@ -5,6 +5,7 @@ import { GraduationCap, Clock, Users, Award, ChevronRight, Star, CheckCircle } f
 import Link from "next/link"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function HomePage() {
   const featuredPrograms = [
@@ -55,6 +56,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SpeedInsights />
       <Header />
 
       {/* Hero Section */}
