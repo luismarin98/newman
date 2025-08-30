@@ -4,9 +4,9 @@ import Link from "next/link"
 import { ThemeToggle } from "@/components/atoms/theme-toggle"
 
 interface HeaderProps {
-  showBackButton?: boolean
-  backHref?: string
-  backText?: string
+  readonly showBackButton?: boolean
+  readonly backHref?: string
+  readonly backText?: string
 }
 
 export function Header({ showBackButton = false, backHref = "/", backText = "Volver" }: HeaderProps) {
@@ -48,7 +48,7 @@ export function Header({ showBackButton = false, backHref = "/", backText = "Vol
 
         <div className="flex items-center space-x-3">
           <ThemeToggle />
-          <Button asChild className="bg-accent hover:bg-accent/90">
+          <Button asChild>
             <Link href="/proceso-admision">Solicitar Información</Link>
           </Button>
         </div>

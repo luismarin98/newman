@@ -63,7 +63,7 @@ export default function HomePage() {
       <section className="relative py-20 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold text-balance mb-6 font-[family-name:var(--font-playfair)]">
-            Impulsa tu Carrera con una
+            <span>Impulsa tu Carrera con una</span>
             <span className="text-primary"> Maestría de Prestigio</span>
           </h1>
           <p className="text-xl text-muted-foreground text-pretty mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -75,7 +75,7 @@ export default function HomePage() {
               <Link href="#programas">Explorar Maestrías</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="text-lg px-8 bg-transparent">
-              <Link href="/solicitar-informacion">Solicitar Información</Link>
+              <Link href="/proceso-admision">Solicitar Información</Link>
             </Button>
           </div>
         </div>
@@ -85,8 +85,8 @@ export default function HomePage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {trustSignals.map((signal, index) => (
-              <div key={index} className="text-center">
+            {trustSignals.map((signal) => (
+              <div key={signal.text} className="text-center">
                 <signal.icon className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2">{signal.text}</h3>
                 <p className="text-sm text-muted-foreground">{signal.description}</p>
@@ -174,7 +174,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild className="text-lg px-8">
-              <Link href="/solicitar-informacion">Solicitar Información Gratuita</Link>
+              <Link href="/proceso-admision">Solicitar Información Gratuita</Link>
             </Button>
             <Button
               size="lg"

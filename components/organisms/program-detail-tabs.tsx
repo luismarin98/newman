@@ -2,9 +2,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Download, CheckCircle } from "lucide-react"
+import { ProgramData } from "../interfaces/ProgramData";
 
-interface ProgramDetailTabsProps {
-  program: any
+export interface ProgramDetailTabsProps {
+  program: ProgramData;
 }
 
 export function ProgramDetailTabs({ program }: ProgramDetailTabsProps) {
@@ -76,8 +77,8 @@ export function ProgramDetailTabs({ program }: ProgramDetailTabsProps) {
           <p className="text-muted-foreground mb-8 leading-relaxed">{program.tabs.docentes.description}</p>
 
           <div className="space-y-6">
-            {program.tabs.docentes.professors.map((professor: any, index: number) => (
-              <div key={index} className="flex gap-6 p-6 border rounded-lg">
+            {program.tabs.docentes.professors.map((professor) => (
+              <div key={professor.name} className="flex gap-6 p-6 border rounded-lg">
                 <div className="w-20 h-20 bg-muted rounded-full flex-shrink-0"></div>
                 <div>
                   <h5 className="text-lg font-semibold text-primary mb-2">{professor.name}</h5>

@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ExternalLink } from "lucide-react"
 import { Header } from "@/components/layout/header"
 import { ContactForm } from "@/components/forms/contact-form"
+import { Footer } from "@/components/layout/footer"
 
 export default function BecasPage() {
   const scholarshipProviders = [
@@ -170,7 +171,7 @@ export default function BecasPage() {
                         </div>
                         <p className="text-sm font-medium text-primary mb-2">{provider.fullName}</p>
                         <p className="text-sm text-muted-foreground">{provider.description}</p>
-                        <p className="text-sm font-semibold text-accent mt-2">{provider.discount}</p>
+                        <p className="text-sm font-semibold text-primary mt-2">{provider.discount}</p>
                       </div>
                     </div>
                   </CardHeader>
@@ -207,6 +208,8 @@ export default function BecasPage() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   )
 }

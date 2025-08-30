@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { MapPin } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/layout/header"
+import { Footer } from "@/components/layout/footer"
 
 export default function PresenciaInternacionalPage() {
   const countries = [
@@ -74,22 +75,22 @@ export default function PresenciaInternacionalPage() {
             {/* Map placeholder */}
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="/PresenciaInternacional.svg?height=400&width=600"
                 alt="Mapa de presencia internacional"
-                className="w-full h-[400px] object-contain"
+                className="w-full h-[450px] object-contain"
               />
             </div>
 
             {/* Countries Information */}
             <div className="space-y-8">
-              {countries.map((country, index) => (
-                <div key={index}>
+              {countries.map((country) => (
+                <div key={country.name}>
                   <h3 className="text-xl font-bold mb-2 text-primary">{country.name}</h3>
                   <p className="text-muted-foreground mb-4">{country.description}</p>
                   <div className="space-y-2">
-                    {country.cities.map((city, cityIndex) => (
-                      <div key={cityIndex} className="flex items-center gap-2">
-                        <MapPin className="h-4 w-4 text-accent" />
+                    {country.cities.map((city) => (
+                      <div key={city} className="flex items-center gap-2">
+                        <MapPin className="h-4 w-4" />
                         <span className="text-sm">{city}</span>
                       </div>
                     ))}
@@ -106,7 +107,7 @@ export default function PresenciaInternacionalPage() {
             <CardHeader>
               <div className="flex items-center gap-4">
                 <img
-                  src="/placeholder.svg?height=80&width=80"
+                  src="/MIU.png?height=80&width=80"
                   alt="MIU City University"
                   className="w-20 h-20 object-contain"
                 />
@@ -165,12 +166,12 @@ export default function PresenciaInternacionalPage() {
         <div className="text-center">
           <h3 className="text-xl font-semibold mb-8">Instituciones Partner</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center justify-items-center">
-            {partners.map((partner, index) => (
+            {partners.map((partner) => (
               <img
-                key={index}
+                key={partner.name}
                 src={partner.logo || "/placeholder.svg"}
                 alt={`${partner.name} logo`}
-                className="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-36 rounded-full shadow-md hover:shadow-lg shadow-neutral-800 object-contain transition-all duration-300"
               />
             ))}
           </div>
@@ -182,6 +183,7 @@ export default function PresenciaInternacionalPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
