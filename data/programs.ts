@@ -737,6 +737,179 @@ export const programsData = {
       },
     },
   },
+
+  educacion: {
+    title: "Maestría en Educación",
+    description: "Transforma la educación con metodologías innovadoras y enfoques pedagógicos de vanguardia.",
+    duration: "24 meses",
+    credits: "48",
+    modality: "En línea",
+    degree: "Título Universitario",
+    startDate: "13 de octubre de 2025",
+    category: "Educación",
+    image: "/modern-classroom-technology-education.png",
+    tabs: {
+      descripcion: {
+        title: "Descripción del programa",
+        content:
+          "Esta maestría está diseñada para profesionales de la educación que buscan transformar sus prácticas pedagógicas con metodologías innovadoras.",
+        creditBreakdown: [{ type: "Maestría Oficial", credits: 48 }],
+        totalCredits: 48,
+        curriculum: [
+          { name: "Metodologías Innovadoras en Educación", type: "Básica", ects: 5 },
+          { name: "Evaluación y Calidad Educativa", type: "Básica", ects: 5 },
+          { name: "Liderazgo Educativo", type: "Básica", ects: 5 },
+          { name: "Tecnología Educativa", type: "Básica", ects: 5 },
+        ],
+        methodology: {
+          title: "Metodología aplicada",
+          description: "Enfoque práctico con casos reales del ámbito educativo.",
+          components: [
+            { title: "Casos prácticos", description: "Análisis de casos reales en instituciones educativas." },
+            { title: "Proyectos aplicados", description: "Desarrollo de proyectos de mejora educativa." },
+          ],
+        },
+      },
+      malla: { title: "Malla curricular", downloadLink: "DESCARGAR LA MALLA CURRICULAR ARCHIVO PDF" },
+      docentes: {
+        title: "Docentes especializados",
+        description: "Profesores con amplia experiencia en educación y pedagogía.",
+        professors: [
+          {
+            name: "Dra. María Elena Rodríguez",
+            title: "Doctora en Educación con especialización en Metodologías Innovadoras.",
+            image: "/professor-1.jpg",
+          },
+          {
+            name: "Mg. Carlos Vega",
+            title: "Magíster en Gestión Educativa con 15 años de experiencia.",
+            image: "/professor-1.jpg",
+          },
+        ],
+      },
+      inversion: {
+        title: "Formas de Pago",
+        peru: { title: "Inversión Perú", reserve: "Reserva: S/400", total: "Inversión Total: S/16 800" },
+        ecuador: { title: "Inversión Ecuador", reserve: "Reserva: $100", total: "Inversión Total: $4 200" },
+        paymentOptions: [
+          { title: "Pago al contado", description: "Descuentos especiales para pago anticipado." },
+          { title: "Pago fraccionado", description: "Facilidades de pago en cuotas mensuales." },
+        ],
+      },
+      admision: {
+        title: "Requisitos de admisión",
+        requirements: {
+          title: "Para acceder a la maestría es necesario contar con:",
+          degree: "Título profesional en Educación o áreas afines.",
+          documents: [
+            "Título profesional legalizado",
+            "Certificado de estudios",
+            "Copia del documento de identidad",
+            "CV actualizado",
+          ],
+        },
+      },
+      oficialidad: {
+        title: "Reconocimiento del título y oficialidad",
+        sunedu: {
+          title: "Licenciados por la SUNEDU",
+          description: "Programa reconocido oficialmente por SUNEDU con validez nacional e internacional.",
+        },
+      },
+    },
+  },
+
+  salud: {
+    title: "Maestría en Gestión en Salud",
+    description:
+      "Especialízate en la administración y gestión de sistemas de salud con enfoque en calidad y eficiencia.",
+    duration: "20 meses",
+    credits: "54",
+    modality: "Híbrida",
+    degree: "Título Universitario",
+    startDate: "13 de octubre de 2025",
+    category: "Salud",
+    image: "/healthcare-management-hospital-administration.png",
+    tabs: {
+      descripcion: {
+        title: "Descripción del programa",
+        content:
+          "Esta maestría forma especialistas en gestión y administración de servicios de salud, con enfoque en calidad, eficiencia y liderazgo sanitario.",
+        creditBreakdown: [{ type: "Maestría Oficial", credits: 54 }],
+        totalCredits: 54,
+        curriculum: [
+          { name: "Gestión de Servicios de Salud", type: "Básica", ects: 6 },
+          { name: "Calidad y Seguridad del Paciente", type: "Básica", ects: 6 },
+          { name: "Economía de la Salud", type: "Básica", ects: 6 },
+          { name: "Liderazgo en Organizaciones Sanitarias", type: "Básica", ects: 6 },
+          { name: "Epidemiología y Salud Pública", type: "Básica", ects: 6 },
+        ],
+        methodology: {
+          title: "Metodología aplicada",
+          description: "Combinación de clases virtuales y presenciales con casos reales del sector salud.",
+          components: [
+            { title: "Casos clínicos", description: "Análisis de casos reales en instituciones de salud." },
+            { title: "Simulaciones", description: "Simulaciones de gestión hospitalaria y sanitaria." },
+            { title: "Prácticas dirigidas", description: "Prácticas en instituciones de salud reconocidas." },
+          ],
+        },
+      },
+      malla: { title: "Malla curricular", downloadLink: "DESCARGAR LA MALLA CURRICULAR ARCHIVO PDF" },
+      docentes: {
+        title: "Docentes especializados",
+        description: "Profesionales con amplia experiencia en gestión sanitaria y administración hospitalaria.",
+        professors: [
+          {
+            name: "Dr. Roberto Mendoza",
+            title: "Médico especialista en Gestión Hospitalaria con 20 años de experiencia.",
+            image: "/professor-1.jpg",
+          },
+          {
+            name: "Mg. Ana Lucía Torres",
+            title: "Administradora en Salud con especialización en Calidad Sanitaria.",
+            image: "/professor-1.jpg",
+          },
+          {
+            name: "Dr. Carlos Herrera",
+            title: "Especialista en Epidemiología y Salud Pública.",
+            image: "/professor-1.jpg",
+          },
+        ],
+      },
+      inversion: {
+        title: "Formas de Pago",
+        peru: { title: "Inversión Perú", reserve: "Reserva: S/500", total: "Inversión Total: S/19 800" },
+        ecuador: { title: "Inversión Ecuador", reserve: "Reserva: $120", total: "Inversión Total: $4 900" },
+        paymentOptions: [
+          { title: "Pago al contado", description: "Descuentos especiales para profesionales de la salud." },
+          { title: "Pago fraccionado", description: "Facilidades de pago adaptadas a profesionales sanitarios." },
+          { title: "Convenios institucionales", description: "Descuentos especiales para instituciones de salud." },
+        ],
+      },
+      admision: {
+        title: "Requisitos de admisión",
+        requirements: {
+          title: "Para acceder a la maestría es necesario contar con:",
+          degree: "Título profesional en Medicina, Enfermería, Administración en Salud o áreas afines.",
+          documents: [
+            "Título profesional legalizado",
+            "Colegiatura vigente (para profesionales de la salud)",
+            "Certificado de estudios",
+            "CV con experiencia en el sector salud",
+            "Carta de recomendación institucional",
+          ],
+        },
+      },
+      oficialidad: {
+        title: "Reconocimiento del título y oficialidad",
+        sunedu: {
+          title: "Licenciados por la SUNEDU",
+          description:
+            "Programa reconocido oficialmente por SUNEDU con validez para el ejercicio profesional en el sector salud.",
+        },
+      },
+    },
+  },
 }
 
 export type ProgramId = keyof typeof programsData
